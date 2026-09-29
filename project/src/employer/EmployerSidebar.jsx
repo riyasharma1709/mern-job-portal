@@ -1,20 +1,33 @@
+
 import { Link, useNavigate } from "react-router-dom";
 import "./styles/employerSidebar.css";
 
 export default function EmployerSidebar() {
   const navigate = useNavigate();
 
-  const handleLogout = (e) => {
-    e.preventDefault();
+  const handleLogout = () => {
     localStorage.removeItem("employerToken");
     localStorage.removeItem("employerInfo");
     navigate("/employer/login");
   };
+
   return (
     <div className="emp-sidebar">
 
       <h2 className="emp-logo">CareerQuest</h2>
-      <p style={{ color: 'var(--primary-main)', fontWeight: 'bold', fontSize: '0.8rem', textAlign: 'center', marginTop: '-10px', marginBottom: '20px' }}>FOR EMPLOYERS</p>
+
+      <p
+        style={{
+          color: "var(--primary-main)",
+          fontWeight: "bold",
+          fontSize: "0.8rem",
+          textAlign: "center",
+          marginTop: "-10px",
+          marginBottom: "20px",
+        }}
+      >
+        FOR EMPLOYERS
+      </p>
 
       <ul>
 
@@ -39,7 +52,21 @@ export default function EmployerSidebar() {
         </li>
 
         <li>
-          <a href="#" onClick={handleLogout} style={{color: 'var(--text-main)', textDecoration: 'none'}}>Logout</a>
+          <button
+            type="button"
+            onClick={handleLogout}
+            style={{
+              color: "var(--text-main)",
+              textDecoration: "none",
+              background: "none",
+              border: "none",
+              padding: 0,
+              font: "inherit",
+              cursor: "pointer",
+            }}
+          >
+            Logout
+          </button>
         </li>
 
       </ul>
@@ -47,3 +74,4 @@ export default function EmployerSidebar() {
     </div>
   );
 }
+
