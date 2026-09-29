@@ -1,0 +1,33 @@
+.dashboard-title {
+  margin-bottom: 20px;
+  color: var(--text-main);
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+}
+
+.stats-card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: var(--glass-border);
+  padding: 24px;
+  width: 160px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+  background: var(--surface-hover);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--border-focus);
+}
+
+.stats-card h3 {
+  font-size: 28px;
+  color: var(--primary);
+}

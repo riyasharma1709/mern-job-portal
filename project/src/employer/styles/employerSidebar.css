@@ -1,0 +1,50 @@
+.emp-sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #ffffff;
+  border-right: 1px solid #e2e8f0;
+  color: #0f172a;
+  padding: 30px 20px;
+  position: fixed;
+  box-shadow: 4px 0 15px rgba(0,0,0,0.03);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  z-index: 10;
+}
+
+.emp-logo {
+  margin-bottom: 40px;
+  font-size: 26px;
+  font-weight: 800;
+  color: #10b981;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.emp-sidebar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.emp-sidebar li {
+  margin-bottom: 0;
+}
+
+.emp-sidebar a {
+  color: #475569;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  display: block;
+  padding: 14px 18px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.emp-sidebar a:hover {
+  background: #f1f5f9;
+  color: #10b981;
+  transform: translateX(4px);
+}

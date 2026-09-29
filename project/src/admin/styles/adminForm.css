@@ -1,0 +1,27 @@
+.admin-form {
+  background: white;
+  padding: 25px;
+  max-width: 500px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.admin-form input,
+.admin-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+}
+
+.admin-form button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
