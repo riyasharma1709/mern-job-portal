@@ -32,13 +32,22 @@ app.use('/api/employer-profile', employerProfileRoutes);
 // root route
 app.get('/', (req, res) => {
   res.send('Employer API is running...');
+
 });
-
-
 const PORT = process.env.PORT || 5000;
 
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
+}
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
 export default app;
+
+// const PORT = process.env.PORT || 5000;
+
+
+// app.listen(PORT, () => {
+//   console.log(`Server is running on port ${PORT}`);
+// });
+// export default app;
