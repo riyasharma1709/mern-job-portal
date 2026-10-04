@@ -57,7 +57,7 @@ export default function EmployerRegister() {
     if (!validate()) return;
 
     try {
-      const res = await fetch("https://mern-job-portal-p2he.vercel.app/", {
+      const res = await fetch("https://mern-job-portal-p2he.vercel.app/api/employers/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
